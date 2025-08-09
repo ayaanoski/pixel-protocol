@@ -1,7 +1,8 @@
 # Pixel Protocol
 
 <p align="center">
-  <img src="assets/logo.png" alt="Pixel Protocol Logo" width="200"/>
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/e830f8a1-b5ec-495f-8120-de1987b93c3f" />
+
 </p>
 
 <p align="center">
