@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-black text-white;
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-purple-500/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-400;
+  }
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Smooth Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Menu Animation */
+.menu-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
