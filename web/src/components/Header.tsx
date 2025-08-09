@@ -83,7 +83,7 @@ const Header: React.FC = () => {
               GitHub
             </a>
             <a
-              href="https://docs.pixelprotocol.com"
+              href="https://pixel-protocol-2.gitbook.io/pixel-protocol-docs"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white px-4 py-2 text-xs transition-colors"
