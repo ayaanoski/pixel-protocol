@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="bg-black text-white min-h-screen relative">
       <div 
-        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat opacity-40"
+        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${isMobile ? '/vertical-bg.png' : '/bg.png'})` }}
       />
       <Header />

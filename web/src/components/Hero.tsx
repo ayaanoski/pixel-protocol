@@ -4,26 +4,28 @@ import ScrollAnimation from './ScrollAnimation';
 const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-20 press-start-2p-regular relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/40 z-0"></div>
-      
+      <div className="absolute inset-0 bg-transparent z-0"></div>
+      {/* Subtle geometric pattern overlay */}
+      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10 z-0"></div>
+
       <div className="text-center max-w-5xl mx-auto relative z-10">
         <ScrollAnimation>
-          <div className="mb-12">
+          <div className="mb-10"> {/* Reduced margin for a tighter look */}
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden mb-8">
-                <img 
-                  src="/logo.jpeg" 
-                  alt="Pixel Protocol Logo" 
+              <div className="w-20 h-20 md:w-28 md:h-28 rounded-xl overflow-hidden mb-6"> {/* Slightly smaller logo */}
+                <img
+                  src="/logo.jpeg"
+                  alt="Pixel Protocol Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="inline-block relative">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-4 relative z-10">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl text-white mb-3 relative z-10"> {/* Adjusted font sizes and margin */}
                   Pixel Protocol
                 </h1>
-                <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-xl z-0"></div>
+                {/* Removed the purple glow */}
               </div>
-              <h2 className="text-2xl md:text-3xl text-white/90 mt-6 font-light">
+              <h2 className="text-xl md:text-2xl text-gray-300 mt-4 font-light"> {/* Subtler color */}
                 Your On-Chain Reputation, Decoded
               </h2>
             </div>
@@ -31,37 +33,39 @@ const Hero: React.FC = () => {
         </ScrollAnimation>
 
         <ScrollAnimation>
-          <h3 className="text-lg md:text-xl text-purple-200/90 mb-8 font-light tracking-wide">
+          <h3 className="text-lg md:text-xl text-gray-400 mb-6 font-light tracking-wide"> {/* Muted color */}
             Building the foundational infrastructure for a private, self-sovereign Web3 financial ecosystem
           </h3>
         </ScrollAnimation>
-        
+
         <ScrollAnimation>
-          <p className="text-base md:text-lg text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed">
-            The current centralized credit system is broken. It excludes billions of people, is controlled by a few opaque entities, 
-            and fails to capture the full scope of a person's financial behavior. Pixel Protocol is the decentralized solution, 
+          <p className="text-base md:text-lg text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"> {/* Adjusted margin */}
+            The current centralized credit system is broken. It excludes billions of people, is controlled by a few opaque entities,
+            and fails to capture the full scope of a person's financial behavior. Pixel Protocol is the decentralized solution,
             giving users ownership of their financial identity and empowering a new era of consumer finance.
           </p>
         </ScrollAnimation>
 
         <ScrollAnimation>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center"> {/* Reduced gap */}
             <a href="/developers" className="group relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-              <button className="relative px-8 py-4 bg-black rounded-lg leading-none flex items-center">
-                <span className="text-gray-200 group-hover:text-white transition duration-200 text-sm">
+              {/* Removed the purple glow from the button */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-50 group-hover:opacity-75 transition duration-200"></div>
+              <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
+                <span className="text-gray-300 group-hover:text-white transition duration-200 text-sm">
                   Enter the Protocol
-                  <span className="block mt-1 text-purple-400 group-hover:text-purple-300">(For Devs)</span>
+                  <span className="block mt-1 text-gray-500 group-hover:text-gray-400">(For Devs)</span>
                 </span>
               </button>
             </a>
-            
+
             <a href="/credentials" className="group relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg blur opacity-50 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-              <button className="relative px-8 py-4 bg-black rounded-lg leading-none flex items-center border border-white/10">
-                <span className="text-gray-200 group-hover:text-white transition duration-200 text-sm">
+              {/* Removed the purple glow from the button */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-40 group-hover:opacity-60 transition duration-200"></div>
+              <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
+                <span className="text-gray-300 group-hover:text-white transition duration-200 text-sm">
                   View Your Credentials
-                  <span className="block mt-1 text-purple-400 group-hover:text-purple-300">(For Users)</span>
+                  <span className="block mt-1 text-gray-500 group-hover:text-gray-400">(For Users)</span>
                 </span>
               </button>
             </a>
