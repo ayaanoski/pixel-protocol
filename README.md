@@ -1,9 +1,7 @@
 # Pixel Protocol
 
-<p align="center">
-  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/e830f8a1-b5ec-495f-8120-de1987b93c3f" />
+<img width="3780" height="1890" alt="PIXEL PROTOCOL" src="https://github.com/user-attachments/assets/cb0b2b2a-ef6c-4dad-a6b3-1a8ce24053dd" />
 
-</p>
 
 <p align="center">
   <strong>Decentralized Reputation Infrastructure for Web3</strong>
@@ -20,6 +18,13 @@
 ## Overview
 
 Pixel Protocol is a decentralized reputation infrastructure that enables privacy-preserving credential verification and reputation scoring in Web3. Built on zero-knowledge proofs, the protocol allows users to prove their credentials and reputation without revealing sensitive information.
+
+<img width="1417" height="814" alt="Macbook-Air-pixel-protocol vercel app" src="https://github.com/user-attachments/assets/0fda57ac-a668-4ffd-a932-15072618b753" />
+
+<img width="1417" height="814" alt="Macbook-Air-pixel-protocol vercel app (1)" src="https://github.com/user-attachments/assets/c5865c5b-025b-4e76-98ba-1ebe010f71d5" />
+
+<img width="1417" height="814" alt="Macbook-Air-pixel-protocol vercel app (2)" src="https://github.com/user-attachments/assets/e83f8d9a-e8e4-48c1-aba7-12f8ec8a27b0" />
+
 
 ### Key Features
 
