@@ -144,7 +144,7 @@ const isValid = await protocol.verifyProof(proof);`;
                 </ul>
                 <div className="mt-4">
                   <a 
-                    href="https://github.com/ayaanoski/pixel-protocol/pixel-sdk" 
+                    href="https://github.com/ayaanoski/pixel-protocol/tree/main/pixel-sdk" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-blue-400 hover:text-blue-300"
