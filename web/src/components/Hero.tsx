@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -48,7 +49,7 @@ const Hero: React.FC = () => {
 
         <ScrollAnimation>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center"> {/* Reduced gap */}
-            <a href="/developers" className="group relative">
+            <a href="https://pixel-protocol-2.gitbook.io/pixel-protocol-docs" className="group relative">
               {/* Removed the purple glow from the button */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-50 group-hover:opacity-75 transition duration-200"></div>
               <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
@@ -59,16 +60,16 @@ const Hero: React.FC = () => {
               </button>
             </a>
 
-            <a href="/credentials" className="group relative">
-              {/* Removed the purple glow from the button */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-40 group-hover:opacity-60 transition duration-200"></div>
-              <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
-                <span className="text-gray-300 group-hover:text-white transition duration-200 text-sm">
-                  View Your Credentials
-                  <span className="block mt-1 text-gray-500 group-hover:text-gray-400">(For Users)</span>
-                </span>
-              </button>
-            </a>
+            <Link to="/credentials" className="group relative"> {/* 👈 Use Link and 'to' prop */}
+              {/* Removed the purple glow from the button */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-40 group-hover:opacity-60 transition duration-200"></div>
+              <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
+                <span className="text-gray-300 group-hover:text-white transition duration-200 text-sm">
+                  View Your Credentials
+                  <span className="block mt-1 text-gray-500 group-hover:text-gray-400">(For Users)</span>
+                </span>
+              </button>
+            </Link> 
           </div>
         </ScrollAnimation>
       </div>
