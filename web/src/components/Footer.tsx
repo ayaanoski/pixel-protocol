@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
                 <a href="https://t.me/VINSMOKee24" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
                   Telegram
                 </a>
-                <a href="https://medium.com/pixelprotocol" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://medium.com/@ayaanninja2403/building-trust-preserving-privacy-introducing-pixel-protocol-for-web3-consumer-finance-d3359329268b" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
                   Medium
                 </a>
     _          </div>
