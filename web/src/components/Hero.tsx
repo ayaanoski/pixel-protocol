@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
 
         <ScrollAnimation>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://pixel-protocol-2.gitbook.io/pixel-protocol-docs" className="group relative">
+            <a href="https://pixel-protocol-2.gitbook.io/documentation" className="group relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-800 rounded-md blur opacity-50 group-hover:opacity-75 transition duration-200"></div>
               <button className="relative px-6 py-3 bg-black rounded-md leading-none flex items-center border border-gray-700 hover:border-gray-500 transition-colors">
                 <span className="text-gray-300 group-hover:text-white transition duration-200 text-sm">

@@ -3,7 +3,7 @@ import ScrollAnimation from './ScrollAnimation';
 
 const Footer: React.FC = () => {
   const links = [
-    { title: 'GitBook', url: 'https://pixel-protocol-2.gitbook.io/pixel-protocol-docs', icon: '📚' },
+    { title: 'GitBook', url: 'https://pixel-protocol-2.gitbook.io/documentation', icon: '📚' },
     { title: 'GitHub', url: 'https://github.com/ayaanoski/pixel-protocol', icon: '💻' },
     { title: 'Explorer', url: 'https://morphscan.com/pixelprotocol', icon: '🔍' },
     { title: 'Morph L2', url: 'https://morph.network', icon: '⚡' }
